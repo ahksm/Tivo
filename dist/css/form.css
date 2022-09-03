@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+ul {
+  margin-bottom: 0;
+}
+
+p {
+  font-size: 1rem/1.625rem;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.375rem/1.75rem;
+  font-weight: 700;
+}
+
+.btn {
+  font-size: 0.875rem/0;
+  font-weight: 700;
+  border: 2px solid #5f4dee;
+  border-radius: 2rem;
+  transition: all 0.2s;
+}
+.btn:focus {
+  box-shadow: none !important;
+  outline: none;
+}
+.btn-dark {
+  padding: 19px 34px;
+  background-color: #5f4dee;
+  color: #fff;
+}
+.btn-dark:hover, .btn-dark:focus {
+  background-color: transparent;
+  color: #5f4dee;
+  border-color: #5f4dee;
+}
+.btn-light {
+  background-color: #f3f7fd;
+  color: #5f4dee;
+  padding: calc(1.375rem - 10px) 2.625rem;
+  border: 2px solid #f3f7fd;
+}
+.btn-light:hover {
+  background-color: #5f4dee;
+  color: #fff;
+  border: 2px solid #fff;
+}
+.btn-white {
+  background-color: transparent;
+  color: #5f4dee;
+  padding: 9px 33px;
+  border: 2px solid #5f4dee;
+}
+.btn-white:hover {
+  background-color: #5f4dee;
+  color: #fff !important;
+}
+
+.btn-dark:not(:disabled):not(.disabled):active {
+  background-color: transparent;
+  color: #5f4dee;
+  border-color: #5f4dee;
+}
+
+.fas.fa-square {
+  margin-right: 10px;
+  font-size: 8px;
+  color: #5f4dee;
+}
+.fas.fa-square.white {
+  color: #fff;
+  margin-right: 0.5rem;
+}
+
+body {
+  background-color: #5f4dee;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+p {
+  margin-bottom: 2.5rem;
+}
+p a {
+  color: inherit;
+  text-decoration: underline;
+}
+p a:hover, p a:focus, p a:active {
+  color: inherit;
+}
+
+main {
+  padding-top: 11rem;
+  text-align: center;
+  color: #fff;
+}
+main .sign-up__form-container {
+  background-color: #f3f7fd;
+  max-width: 26rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 2.25rem 1.25rem 1.25rem;
+  border-radius: 0.5rem;
+}
+main .sign-up__form-container input[type=email],
+main .sign-up__form-container input[type=text],
+main .sign-up__form-container input[type=password] {
+  width: 96%;
+  margin-bottom: 1.25rem;
+  text-align: start;
+  margin-left: 8px;
+  border: 1px solid #c4d8dc;
+  height: 50px;
+}
+main .sign-up__form-container input[type=email]::placeholder,
+main .sign-up__form-container input[type=text]::placeholder,
+main .sign-up__form-container input[type=password]::placeholder {
+  padding-left: 0.5rem;
+  font-size: 0.875rem;
+  color: #555;
+}
+main .sign-up__form-container .checkbox {
+  font-size: 0.75rem;
+  color: #555;
+  margin-left: 10px;
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+main .sign-up__form-container .checkbox p {
+  margin-bottom: 0;
+}
+main .sign-up__form-container .checkbox a {
+  text-decoration: underline;
+  color: #555;
+}
+main .sign-up__form-container .btn {
+  width: 96%;
+  padding: 14px 0;
+  margin-bottom: 1.25rem;
+  font-size: 0.875rem;
+}/*# sourceMappingURL=form.css.map */

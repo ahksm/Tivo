@@ -1,0 +1,107 @@
+@import './variables';
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+@function weight($weight-name) {
+    @return map-get($font-weights, $weight-name)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+    margin-bottom: 0;
+}
+
+p {
+    font-size: 1rem/1.625rem;
+    font-weight: weight(regular);
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: weight(bold);
+}
+
+h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 1.375rem/1.75rem;
+    font-weight: weight(bold);
+}
+
+.btn {
+    font-size: 0.875rem/0;
+    font-weight: weight(bold);
+    border: 2px solid $primary-color;
+    border-radius: 2rem;
+    @include transition;
+
+    &:focus {
+        box-shadow: none !important;
+        outline: none;
+    }
+
+    &-dark {
+        padding: 19px 34px;
+        background-color: $primary-color;
+        color: $white;
+
+        &:hover,
+        &:focus {
+            background-color: transparent;
+            color: $primary-color;
+            border-color: $primary-color;
+        }
+    }
+
+    &-light {
+        background-color: $light-color;
+        color: $primary-color;
+        padding: calc(1.375rem - 10px)2.625rem;
+        border: 2px solid $light-color;
+
+        &:hover {
+            background-color: $primary-color;
+            color: $white;
+            border: 2px solid $white;
+        }
+    }
+
+    &-white {
+        background-color: transparent;
+        color: $primary-color;
+        padding: 9px 33px;
+        border: 2px solid $primary-color;
+
+        &:hover {
+            background-color: $primary-color;
+            color: $white !important;
+        }
+    }
+}
+
+.btn-dark:not(:disabled):not(.disabled):active {
+    background-color: transparent;
+    color: $primary-color;
+    border-color: $primary-color;
+}
+
+.fas.fa-square {
+    margin-right: 10px;
+    font-size: 8px;
+    color: $primary-color;
+
+    &.white {
+        color: $white;
+        margin-right: .5rem;
+    }
+}
